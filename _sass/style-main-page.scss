@@ -11,15 +11,15 @@
 }
 
 
-.sections-and-sidebar-main-cell{
+.sections-and-sidebar-main_cell{
   background-color: #eee;
 }
 
 
-.sections-and-sidebar-main-grid-x{
+.sections-and-sidebar-main_grid-x{
   height: 100%;
 
-  .sections-content-grid-container{
+  .sections-content_grid-container{
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     overflow-y: auto;
@@ -32,17 +32,42 @@
     height: 100%;
   }
 
-  .sections-content-cell{
-    background-color: #ccc;
+  .sections-content_cell{
+    // background-color: #ccc;
     @media(min-width: 640px){
       width: 66.66667%;
     }
+    @media(min-width: 640px) and (max-width: 1024px){
+      width: 75%;
+    }
     @media(min-width: 1024px) and (max-width: 1224px) and (min-height: 830px){
-      width: 82%;
+      width: 83.33333%;
     }
     @media(min-width: 1224px) and (max-width: 1624px) and (min-height: 830px){
       width: 70%;
     }
+  }
+}
+
+
+
+
+
+
+
+.sections-content_grid-y{
+  justify-content: space-between;
+  @media(min-width: 640px){
+    height: 100%;
+  }
+  @media(min-width: 640px) and (max-width: 1324px) and (min-height: 600px){
+    justify-content: flex-start;
+  }
+
+  .grid-margin-x > .cell {
+    width: calc(100% - 1rem);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   img{
@@ -54,50 +79,32 @@
     bottom: 0;
     left: 0;
   }
-}
 
-figcaption{
-  transition: all 0.35s;
-  font-size: 1rem;
-  padding-left: 1rem;
-  padding-right: 2rem;
-  position: absolute;
-  background-color: #3f6d96;
-  background-color: rgba(63, 109, 150, 0.7);
-  height: 35px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.cell-width:hover figcaption{
-  height: 100%;
-}
-
-
-
-
-
-
-.cell-width{
-  width: 100%;
-  margin: 0.5rem;
-  position: relative;
-  overflow: hidden;
-  background-color: limegreen;
-  @media(min-width: 640px){
-    padding-top: 19.5%;
+  figcaption{
+    transition: all 0.35s;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    position: absolute;
+    background-color: #3f6d96;
+    background-color: rgba(63, 109, 150, 0.7);
+    height: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
-}
-.cell-height{
-  // background-color: #ddd;
-}
-.grid-section{
-  justify-content: space-between;
-  @media(min-width: 640px){
+
+  .figure-width{
+    width: 100%;
+    // margin: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    padding-top: 63%;
+    @media(min-width: 640px){
+      padding-top: 19.5%;
+    }
+  }
+  .figure-width:hover figcaption{
     height: 100%;
-  }
-  @media(min-width: 640px) and (max-width: 1324px) and (min-height: 600px){
-    justify-content: flex-start;
   }
 }

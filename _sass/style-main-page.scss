@@ -1,0 +1,103 @@
+.parent-grid-system{
+  @media(min-width: 640px){
+    height: 100vh;
+  }
+}
+
+
+
+.header{
+  background-color: #ddd;
+}
+
+
+.sections-and-sidebar-main-cell{
+  background-color: #eee;
+}
+
+
+.sections-and-sidebar-main-grid-x{
+  height: 100%;
+
+  .sections-content-grid-container{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    overflow-y: auto;
+    // if display is to small a scrollbar apears
+    height: 100%;
+  }
+
+  .sidebar{
+    background-color: #aaa;
+    height: 100%;
+  }
+
+  .sections-content-cell{
+    background-color: #ccc;
+    @media(min-width: 640px){
+      width: 66.66667%;
+    }
+    @media(min-width: 1024px) and (max-width: 1224px) and (min-height: 830px){
+      width: 82%;
+    }
+    @media(min-width: 1224px) and (max-width: 1624px) and (min-height: 830px){
+      width: 70%;
+    }
+  }
+
+  img{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+figcaption{
+  transition: all 0.35s;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  position: absolute;
+  background-color: #3f6d96;
+  background-color: rgba(63, 109, 150, 0.7);
+  height: 35px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cell-width:hover figcaption{
+  height: 100%;
+}
+
+
+
+
+
+
+.cell-width{
+  width: 100%;
+  margin: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: limegreen;
+  @media(min-width: 640px){
+    padding-top: 19.5%;
+  }
+}
+.cell-height{
+  // background-color: #ddd;
+}
+.grid-section{
+  justify-content: space-between;
+  @media(min-width: 640px){
+    height: 100%;
+  }
+  @media(min-width: 640px) and (max-width: 1324px) and (min-height: 600px){
+    justify-content: flex-start;
+  }
+}

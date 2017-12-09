@@ -26,6 +26,22 @@
         <script src="js/vendor/what-input.min.js"></script>
         <script src="js/vendor/foundation.min.js"></script>
         <script>$(document).foundation()</script>
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 4,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjEn-ZVUCQJiWfoWfp4qQBtcn-5J_gUC0&callback=initMap">
+        </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

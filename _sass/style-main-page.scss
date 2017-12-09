@@ -1,3 +1,4 @@
+
 .parent-grid-system{
   @media(min-width: 640px){
     height: 100vh;
@@ -7,12 +8,50 @@
 
 
 .header{
-  background-color: #ddd;
+  background-color: #e9edf0;
+  background-color: #ebedf0;
+  // background-color: #ebebeb;
+  box-shadow: 0 8px 6px -6px #ccc;
+  z-index: 999;
+  @media(min-width: 640px){
+    height: 8.5rem;
+  }
+  .header_grid-x{
+    height: 100%;
+    padding-top: 0.3rem;
+    padding-bottom: 0.8rem;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+  .title_cell{
+    align-items: flex-end;
+    display: flex;
+  }
+  .title_div{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo_cell{
+    justify-content: flex-start;
+    display: flex;
+  }
+  .logo_div{
+    height: 100%;
+    align-self: flex-end;
+  }
+
+  img{
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 
 .sections-and-sidebar-main_cell{
-  background-color: #eee;
+  background-color: #fcfcfc;
 }
 
 
@@ -20,7 +59,8 @@
   height: 100%;
 
   .sections-content_grid-container{
-    padding-top: 0.8rem;
+    padding-top: 1.5rem;
+    padding-right: 1.8rem;
     padding-bottom: 0.8rem;
     overflow-y: auto;
     // if display is to small a scrollbar apears
@@ -28,12 +68,51 @@
   }
 
   .sidebar{
-    background-color: #aaa;
-    height: 100%;
+    background-color: #f4f4f4;
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: scroll;
+    @media(min-width: 640px){
+      .auto{
+        flex-basis: 20rem;
+      }
+    }
+    div{
+      margin: 0.8rem 0;
+    }
+    img{
+      margin: 0.5rem 1.2rem 0.5rem 0;
+      height: 1.7rem;
+    }
+    p{
+      margin: 0;
+    }
+    ul{
+      border-left: 5px #57677f solid;
+      padding-left: 0.8rem;
+      list-style: none;
+      margin: 0;
+    }
+    .description{
+      font-weight: 600;
+    }
+    .info{
+      margin-top: auto;
+    }
+    .map_div{
+      height: 10rem;
+    }
+    #map {
+      height: 100%;
+      width: 100%;
+      border: 1px #57677f solid;
+    }
   }
 
   .sections-content_cell{
-    // background-color: #ccc;
     @media(min-width: 640px){
       width: 66.66667%;
     }
@@ -48,10 +127,6 @@
     }
   }
 }
-
-
-
-
 
 
 
@@ -88,6 +163,7 @@
     position: absolute;
     background-color: #3f6d96;
     background-color: rgba(63, 109, 150, 0.7);
+    background-color: #57677f;
     height: 35px;
     left: 0;
     right: 0;

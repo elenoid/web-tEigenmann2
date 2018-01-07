@@ -13,13 +13,6 @@ Zu machen:
 -Kontaktformular, Galerie
 -Navbar ->Sanitär und Spengler
 -Karte
--Partner:
-  Sanitär Trösch AG
-  Richner AG
-  Laufen
-  AFS -> Amt für Feuerschutz
-  Gebrüder/Geb. Diener
--Galerie
   Bericht Tagblatt
 
 Service Bild ersetzen, Umbau -> Gebrit installations systeme
@@ -28,3 +21,12 @@ Service Bild ersetzen, Umbau -> Gebrit installations systeme
 -Bild Webseite für Thomas in PDF
 
 -Namecheap Namen kaufen -> Thomas -> e-mann.ch
+
+Erledigt:
+  -Partner:
+  Sanitär Trösch AG
+  Richner AG
+  Laufen
+  AFS -> Amt für Feuerschutz
+  Gebrüder/Geb. Diener
+  -Galerie

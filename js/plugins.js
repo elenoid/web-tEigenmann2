@@ -22,3 +22,67 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+$('#link-neubau').on('mouseenter', function() {
+  $('#fig-neubau').addClass( "js-hover-figcaption" );
+});
+
+$('#link-neubau').on('mouseleave', function() {
+  $('#fig-neubau').removeClass( "js-hover-figcaption" );
+});
+
+$('#link-umbau').on('mouseenter', function() {
+  $('#fig-umbau').addClass( "js-hover-figcaption" );
+});
+
+$('#link-umbau').on('mouseleave', function() {
+  $('#fig-umbau').removeClass( "js-hover-figcaption" );
+});
+
+$('#link-service').on('mouseenter', function() {
+  $('#fig-service').addClass( "js-hover-figcaption" );
+});
+
+$('#link-service').on('mouseleave', function() {
+  $('#fig-service').removeClass( "js-hover-figcaption" );
+});
+
+$('#link-wasserenthärtung').on('mouseenter', function() {
+  $('#fig-wasserenthärtung').addClass( "js-hover-figcaption" );
+});
+
+$('#link-wasserenthärtung').on('mouseleave', function() {
+  $('#fig-wasserenthärtung').removeClass( "js-hover-figcaption" );
+});
+
+$('#link-blitzschutz').on('mouseenter', function() {
+  $('#fig-blitzschutz').addClass( "js-hover-figcaption" );
+});
+
+$('#link-blitzschutz').on('mouseleave', function() {
+  $('#fig-blitzschutz').removeClass( "js-hover-figcaption" );
+});
+
+$('#link-ausbildung').on('mouseenter', function() {
+  $('#fig-ausbildung').addClass( "js-hover-figcaption" );
+});
+
+$('#link-ausbildung').on('mouseleave', function() {
+  $('#fig-ausbildung').removeClass( "js-hover-figcaption" );
+});
+
+$('#link-galerie').on('mouseenter', function() {
+  $('#fig-galerie').addClass( "js-hover-figcaption" );
+});
+
+$('#link-galerie').on('mouseleave', function() {
+  $('#fig-galerie').removeClass( "js-hover-figcaption" );
+});
+
+$('#link-kontakt').on('mouseenter', function() {
+  $('#fig-kontakt').addClass( "js-hover-figcaption" );
+});
+
+$('#link-kontakt').on('mouseleave', function() {
+  $('#fig-kontakt').removeClass( "js-hover-figcaption" );
+});

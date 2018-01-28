@@ -222,8 +222,9 @@
     }
     .map_div{
       position: relative;
-      padding-top: 58%;
+      padding-top: 20%;
       @include resp-86{
+        padding-top: 58%;
         width: 100%;
       }
     }

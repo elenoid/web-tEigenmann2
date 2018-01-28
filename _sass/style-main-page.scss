@@ -1,33 +1,42 @@
 
 .parent-grid-system{
-  @media(min-width: 640px){
+  @include resp-86{
     height: 100vh;
   }
 }
 
-
-
 .header{
   background-color: #eee;
   background: linear-gradient(141deg, #e5e5e5, #eee);
-  box-shadow: 0 8px 6px -6px #ccc;
+  border-bottom: 5px solid #9aa2af;
   z-index: 999;
-  @media(min-width: 640px){
-    height: 5.5rem;
-  }
-  @media(min-width: 1224px){
-    height: 8.3rem;
-  }
+  // box-shadow: 0 8px 6px -6px #ccc;
+  // @media(min-width: 640px){
+  //   height: 5.5rem;
+  //   height: 20rem;
+  // }
+  // @media(min-width: 1224px){
+  //   height: 8.3rem;
+  //   height: 20rem;
+  // }
   .header_grid-x{
     height: 100%;
     padding-top: 1.8rem;
     padding-bottom: 1.2rem;
-    justify-content: flex-end;
+    justify-content: center;
     align-content: flex-end;
+    @include resp-86{
+      justify-content: flex-end;
+    }
   }
   .title_cell{
     align-items: flex-end;
     display: flex;
+  }
+  @include resp-86{
+    .grid-x>.title_cell {
+      width: 25%;
+    }
   }
   .title_div{
     display: flex;
@@ -41,7 +50,7 @@
     // background-color: #57677f;
     // old theme
     background-color: #3f6d96;
-    color: #e9e9e9;
+    color: #fefefe;
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
@@ -53,30 +62,52 @@
     justify-content: flex-start;
     display: flex;
     padding-left: 2.1rem;
+    @include resp-86{
+      order: 3;
+      width: 16.66667%;
+    }
   }
   .logo_div{
     height: 100%;
-    align-self: flex-end;
+    display: flex;
   }
 
   img{
-    height: 100%;
+    height: 5.2rem;
+    align-self: flex-end;
     object-fit: contain;
+  }
+}
+
+@include resp-86{
+  .grid-x>.navbar {
+    width: 41.66667%;
   }
 }
 
 .navbar{
   align-self: flex-end;
+  margin-top: 0.5rem;
+  @include resp-86{
+    order: 2;
+  }
   .navbar-center{
-    justify-content: center;
+    @include resp-86{
+      justify-content: center;
+    }
+    // justify-content: center;
     display: flex;
   }
+
   ul{
     // border-top: 2px #9aa2af solid;
-    margin: 0 1rem;
+    margin: 0rem;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    @include resp-86{
+      margin: 0 1rem;
+    }
   }
   li{
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -96,6 +127,7 @@
 
 .sidebar{
   background-color: #f9f9f9;
+  border-top: 5px solid #9aa2af;
   background: linear-gradient(180deg, #f5f5f5 50%, #e5e5e5 150%);
   padding: 1rem 1rem 1.5rem 2.2rem;
   display: flex;
@@ -103,7 +135,14 @@
   justify-content: flex-start;
   flex-direction: column;
   overflow-y: auto;
-  .grid-y{
+  @include resp-86{
+    border-top: 0px solid #9aa2af;
+  }
+  .grid-x{
+    justify-content: center;
+    @include resp-86{
+      height: 100%;
+    }
     p{
       font-family: 'Barlow Semi Condensed', sans-serif;
       font-size: 1.1rem;
@@ -118,6 +157,9 @@
         line-height: 1.8rem;
       }
       margin: 0;
+      @include resp-86{
+        width: 100%;
+      }
     }
     .tags{
       margin-top: 0.5rem;
@@ -126,6 +168,9 @@
         font-style: italic;
         font-weight: 300;
         line-height: 1.5rem;
+      }
+      @include resp-86{
+        width: 100%;
       }
     }
     hr{
@@ -144,11 +189,14 @@
         height: 1.3rem;
         filter: grayscale(30%);
       }
+      @include resp-86{
+        width: 100%;
+      }
     }
     .void{
       margin: 0;
-      @media(min-width: 640px){
-        flex-basis: 20rem;
+      @include resp-86{
+        flex-grow: 1;
       }
     }
     .info{
@@ -168,10 +216,16 @@
         list-style: none;
         margin: 0;
       }
+      @include resp-86{
+        width: 100%;
+      }
     }
     .map_div{
       position: relative;
       padding-top: 58%;
+      @include resp-86{
+        width: 100%;
+      }
     }
     #map {
       position: absolute;
@@ -184,36 +238,35 @@
   }
 }
 
+@include resp-86{
+  .grid-x>.sidebar{
+    width: 16.66667%;
+  }
+}
+
 .sections-and-sidebar-main_cell{
   background-color: #fcfcfc;
 }
 
 .sections-and-sidebar-main_grid-x{
   height: 100%;
+  @include resp-86{
+    justify-content: flex-end;
+  }
 
   .sections-content_grid-container{
     padding-top: 2.5rem;
-    padding-right: 3.2rem;
-    padding-bottom: 1.5rem;
-    overflow-y: auto;
+    padding-bottom: 0.5rem;
     // if display is to small a scrollbar apears
     height: 100%;
+    @include resp-86{
+      padding-right: 3.2rem;
+      overflow-y: auto;
+    }
   }
 
 
   .sections-content_cell{
-    @media(min-width: 640px){
-      width: 66.66667%;
-    }
-    @media(min-width: 640px) and (max-width: 1024px){
-      width: 75%;
-    }
-    @media(min-width: 1024px) and (max-width: 1224px) and (min-height: 830px){
-      width: 83.33333%;
-    }
-    @media(min-width: 1224px) and (max-width: 1624px) and (min-height: 830px){
-      width: 70%;
-    }
   }
 }
 
@@ -228,13 +281,18 @@
     justify-content: flex-start;
   }
 
-  .grid-margin-x > .cell {
-    width: calc(100% - 1rem);
-    margin: 0.5rem;
+  .grid-x{
+    margin: -0.9375rem;
+    @media print, screen and (min-width: 64em){
+      // defines height for content (33%)
+      height: 100%;
+    }
   }
+
 
   img{
     display: block;
+    // display: none;
     opacity: 0.83;
     position: absolute;
     height: 100%;
@@ -246,14 +304,10 @@
 
   figcaption{
     display: flex;
+    // display: none;
     flex-direction: column;
     transition: all 0.35s;
     position: absolute;
-    // background-color: #9aa2af;
-    // background-color: #9aa2afbb;
-    // background-color: #334453ee;
-    // old theme
-    // background-color: #3f6d96;
     height: 200%;
     left: 0;
     right: 0;
@@ -270,7 +324,6 @@
     display: flex;
     height: 100%;
     width: 100%;
-    // background-color: #33445366;
     background-color: #55555533;
     .textbox{
       padding: 0.7rem 1rem;
@@ -283,15 +336,26 @@
     }
   }
 
+  .figure-height{
+    height: calc(33.33333% - 1.875rem);
+    margin: 0.9375rem;
+    display: flex;
+    align-items: center;
+    background-color: #bbb;
+    overflow: hidden;
+  }
+
+
   .figure-width{
-    width: 100%;
     border: 1px #f9f9f9 solid;
     // margin: 0.5rem;
     position: relative;
     overflow: hidden;
-    padding-top: 63%;
-    @media(min-width: 640px){
-      padding-top: 19.5%;
+    padding-top: 70%;
+    width: 100%;
+    @include resp-86{
+      height: 100%;
+      padding: 0;
     }
   }
   .figure-width:hover figcaption{

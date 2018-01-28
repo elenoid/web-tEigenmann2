@@ -87,7 +87,11 @@
 
 .navbar{
   align-self: flex-end;
-  margin-top: 0.5rem;
+  margin-top: 1.2rem;
+  display: none;
+  @include resp-md{
+    display: flex;
+  }
   @include resp-86{
     order: 2;
   }
@@ -122,6 +126,7 @@
 
   li:hover{
     background-color: #6f7d88;
+    color: #fefefe;
   }
 }
 
@@ -129,13 +134,14 @@
   background-color: #f9f9f9;
   border-top: 5px solid #9aa2af;
   background: linear-gradient(180deg, #f5f5f5 50%, #e5e5e5 150%);
-  padding: 1rem 1rem 1.5rem 2.2rem;
+  padding: 1.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   flex-direction: column;
   overflow-y: auto;
   @include resp-86{
+    padding: 1rem 1rem 1.8rem 2.2rem;
     border-top: 0px solid #9aa2af;
   }
   .grid-x{
@@ -149,6 +155,7 @@
       margin: 0;
     }
     .description{
+      margin: 0;
       p{
         color: #555;
         word-spacing: -2px;
@@ -156,23 +163,18 @@
         font-weight: 500;
         line-height: 1.8rem;
       }
-      margin: 0;
       @include resp-86{
         width: 100%;
       }
-    }
-    .tags{
-      margin-top: 0.5rem;
-      p{
+      p.tags{
+        margin-top: 0.5rem;
         color: #888;
         font-style: italic;
         font-weight: 300;
         line-height: 1.5rem;
       }
-      @include resp-86{
-        width: 100%;
-      }
     }
+
     hr{
       width: 100%;
       border-bottom: 1px solid #999;
@@ -257,10 +259,10 @@
 
   .sections-content_grid-container{
     padding-top: 2.5rem;
-    padding-bottom: 0.5rem;
-    // if display is to small a scrollbar apears
+    padding-bottom: 2.5rem;
     height: 100%;
     @include resp-86{
+      padding-bottom: 0;
       padding-right: 3.2rem;
       overflow-y: auto;
     }

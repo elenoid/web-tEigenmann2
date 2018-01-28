@@ -22,6 +22,13 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+$('#link-willkommen').on('mouseenter', function() {
+  $('#fig-willkommen').addClass( "js-hover-figcaption" );
+});
+
+$('#link-willkommen').on('mouseleave', function() {
+  $('#fig-willkommen').removeClass( "js-hover-figcaption" );
+});
 
 $('#link-neubau').on('mouseenter', function() {
   $('#fig-neubau').addClass( "js-hover-figcaption" );

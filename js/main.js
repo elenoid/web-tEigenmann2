@@ -1,12 +1,12 @@
 
 function initMap() {
-  var uluru = {lat: -25.363, lng: 131.044};
+  var andwil = {lat: 47.437445, lng: 9.270587};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: uluru
+    zoom: 10,
+    center: andwil
   });
   var marker = new google.maps.Marker({
-    position: uluru,
+    position: andwil,
     map: map
   });
 }

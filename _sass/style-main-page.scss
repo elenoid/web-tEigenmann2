@@ -99,14 +99,8 @@
     display: flex;
   }
   @include resp-86{
+    justify-content: center;
     order: 2;
-  }
-  .navbar-center{
-    @include resp-86{
-      justify-content: center;
-    }
-    // justify-content: center;
-    display: flex;
   }
 
   ul{
@@ -162,6 +156,9 @@
     }
     .description{
       margin: 0;
+      @include resp-86{
+        width: 100%;
+      }
       p{
         color: #555;
         word-spacing: -2px;
@@ -169,11 +166,9 @@
         font-weight: 500;
         line-height: 1.8rem;
       }
-      @include resp-86{
-        width: 100%;
-      }
       p.tags{
         margin-top: 0.5rem;
+        font-size: 1.1rem;
         color: #888;
         font-style: italic;
         font-weight: 300;
@@ -182,8 +177,10 @@
     }
 
     hr{
-      width: 100%;
       border-bottom: 1px solid #999;
+      @include resp-86{
+        width: 100%;
+      }
     }
     .associate{
       margin: 0;
@@ -230,7 +227,14 @@
     }
     .map_div{
       position: relative;
-      padding-top: 20%;
+      padding-top: 58%;
+      @include resp-md{
+        padding-top: 35%;
+      }
+      // @include resp-lg{
+      //   padding-top: 58%;
+      //   width: 100%;
+      // }
       @include resp-86{
         padding-top: 58%;
         width: 100%;

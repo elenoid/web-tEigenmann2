@@ -7,7 +7,7 @@
 
 .header{
   background-color: #eee;
-  background: linear-gradient(141deg, #e5e5e5, #eee);
+  background: linear-gradient(141deg, #c9c9c9 0%, #e1e1e1 50%, #e1e1e1 50%, #eee 100%);
   border-bottom: 5px solid #9aa2af;
   z-index: 999;
   // box-shadow: 0 8px 6px -6px #ccc;
@@ -19,12 +19,22 @@
   //   height: 8.3rem;
   //   height: 20rem;
   // }
+  // @include resp-md{
+  //   background: linear-gradient(141deg, #e5e5e5 50%, #eee 50%);
+  // }
+  // @include resp-86{
+  //   background: linear-gradient(141deg, #ddd 0%, #e5e5e5 50%, #e5e5e5 50%, #eee 100%);
+  //   // background: linear-gradient(141deg,#e5e5e5 50%, #eee 70%);
+  // }
   .header_grid-x{
     height: 100%;
-    padding-top: 1.8rem;
+    padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     justify-content: center;
     align-content: flex-end;
+    @include resp-md{
+      padding-top: 1.8rem;
+    }
     @include resp-86{
       justify-content: flex-end;
     }
@@ -43,7 +53,7 @@
     height: 100%;
     width: 100%;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
   }
 
   h1{
@@ -53,8 +63,8 @@
     background-color: #3f6d96;
     color: #fefefe;
     width: 100%;
+    font-size: 1.8rem;
     text-align: center;
-    font-size: 2.15rem;
     font-family: 'Share', cursive;
     align-self: flex-end;
     @include resp-md{
@@ -68,8 +78,9 @@
   .logo_cell{
     justify-content: flex-end;
     display: flex;
-    padding-left: 2.1rem;
+    padding-left: 1.1rem;
     @include resp-md{
+      padding-left: 2.1rem;
       justify-content: flex-start;
     }
     @include resp-86{
@@ -83,9 +94,12 @@
   }
 
   img{
-    height: 5.2rem;
+    height: 4.2rem;
     align-self: flex-end;
     object-fit: contain;
+    @include resp-md{
+      height: 5.2rem;
+    }
   }
 }
 
@@ -98,10 +112,11 @@
   display: flex;
   align-items: flex-end;
   i{
+    margin-left: 0.8rem;
     font-size: 1.6rem;
     color: #fefefe;
-    background-color: #999;
-    padding: 0.5rem 0.6rem;
+    background-color: #6f7d88;
+    padding: 0.45rem 0.55rem;
     border-radius: 4px;
   }
   @include resp-md{
@@ -347,6 +362,7 @@
     left: 0;
     right: 0;
     bottom: -100%;
+    // bottom: 0;
   }
   .figure-overlay{
     height: 100%;
@@ -367,8 +383,18 @@
       border-top: 3px #e9e9e9 solid;
       border-bottom: 3px #e9e9e9 solid;
       display: flex;
-      margin: 1.5rem;
+      margin: 0.8rem;
+      transition: all 0.45s ease;
+      @include resp-86{
+        margin: 1.5rem;
+      }
     }
+  }
+
+  .positioned-textblock{
+    display: flex;
+    min-height: 100%;
+    align-self: flex-start;
   }
 
   .figure-height{
@@ -396,9 +422,17 @@
   .figure-width:hover figcaption{
     bottom: 0;
   }
+  .figure-width:hover figcaption .textbox{
+    transition-delay: 0.28s;
+    margin: 0.8rem;
+  }
 
   .js-hover-figcaption{
     bottom: 0;
+  }
+  .js-hover-figcaption .textbox{
+    transition-delay: 0.28s;
+    margin: 0.8rem;
   }
 
   h5{
@@ -419,6 +453,12 @@
     margin: 0;
     color: #444;
     color: #e9e9e9;
-    font-size: 1.05rem;
+    font-size: 0.8rem;
+    @media  print, screen and (max-width: 639px) and (min-width: 450px){
+      font-size: 1.05rem;
+    }
+    @include resp-86{
+      font-size: 1.05rem;
+    }
   }
 }

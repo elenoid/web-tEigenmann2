@@ -22,6 +22,32 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+$( document ).ready(function() {
+  $('#fig-willkommen').addClass( "js-hover-figcaption" );
+});
+
+$('.navbar-center').on('mouseenter', function() {
+  $('#fig-willkommen').removeClass( "js-hover-figcaption" );
+});
+
+$('.figure-width').on('mouseenter', function() {
+  $('#fig-willkommen').removeClass( "js-hover-figcaption" );
+});
+
+$('.navbar-center').on('mouseenter', function() {
+  $('#fig-willkommen').removeClass( "js-hover-figcaption" );
+});
+
+$('#mobile-menu').on('mouseenter', function() {
+  $('#navbar').addClass( "js-hover-navbar" );
+});
+
+$('#close').on('mouseenter', function() {
+  $('#navbar').removeClass( "js-hover-navbar" );
+});
+
+/*
 $('#link-willkommen').on('mouseenter', function() {
   $('#fig-willkommen').addClass( "js-hover-figcaption" );
 });
@@ -29,6 +55,7 @@ $('#link-willkommen').on('mouseenter', function() {
 $('#link-willkommen').on('mouseleave', function() {
   $('#fig-willkommen').removeClass( "js-hover-figcaption" );
 });
+*/
 
 $('#link-neubau').on('mouseenter', function() {
   $('#fig-neubau').addClass( "js-hover-figcaption" );

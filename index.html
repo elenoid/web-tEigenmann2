@@ -7,16 +7,19 @@ layout: default
     <!-- HEADER -->
     <header class="cell header">
       <div class="grid-x header_grid-x">
-        <div class="cell small-3 mobile-menu">
+        <div class="cell small-3 mobile-menu" id="mobile-menu">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <div class="cell small-10 small-order-2 medium-order-1 medium-4 large-4 title_cell">
+        <div class="cell small-11 small-order-2 medium-order-1 medium-4 large-4 title_cell">
           <!-- Exeption: media query min-width 86rem is large-3 -->
           <div id="link-willkommen" class="title_div">
             <h1>Sanitär & Spengler</h1>
           </div>
         </div>
-        <nav class="cell small-10 small-order-3 medium-order-3 medium-8 navbar">
+        <nav class="cell small-12 small-order-3 medium-order-3 medium-8 navbar" id="navbar">
+          <div class="navbar-close">
+            <i class="fa fa-times" id="close"></i>
+          </div>
           <div class="navbar-center">
             <ul>
               <li id="link-neubau">Neubau</li>
@@ -30,7 +33,7 @@ layout: default
             </ul>
           </div>
         </nav>
-        <div class="cell small-7 small-order-1 medium-order-2 medium-4 logo_cell">
+        <div class="cell small-8 small-order-1 medium-order-2 medium-4 logo_cell">
           <div class="logo_div">
             <img src="img/logo.png" alt="logo">
           </div>
@@ -39,7 +42,7 @@ layout: default
     </header>
     <div class="cell auto sections-and-sidebar-main_cell">
       <div class="grid-x align-center sections-and-sidebar-main_grid-x">
-        <div class="cell small-10 medium-8 sections-content_cell"> <!-- default medium-8, settings in css -->
+        <div class="cell small-11 medium-8 sections-content_cell"> <!-- default medium-8, settings in css -->
           <!-- CONTENT SECTION -->
           <div class="sections-content_grid-container">
             <div class="grid-y sections-content_grid-y">
@@ -47,7 +50,7 @@ layout: default
                   <figure class="cell small-12 medium-6 large-4 figure-height">
                     <div class="figure-width">
                       <img src="img/willkommen.jpg" alt="willkommen">
-                      <figcaption  id="fig-willkommen">
+                      <figcaption id="fig-willkommen">
                         <div class="figure-overlay">
                           <h5>Willkommen</h5>
                         </div>
@@ -56,7 +59,8 @@ layout: default
                         <div class="figure-textbox">
                           <div class="textbox">
                             <div class="positioned-textblock">
-                              <p>Lorem ipsum dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              <p class="willkommen-title">Willkommen auf eigenmann.ch </p>
+                              <p>Ihr Spezialist für Sanitärtechnik und Spenglerei.</p>
                             </div>
                           </div>
                         </div>
@@ -226,7 +230,7 @@ layout: default
         <!-- SIDEBAR -->
         <div class="cell small-12 align-self-stretch sidebar">
           <div class="grid-x">
-            <hr class="cell small-10 medium-8">
+            <hr class="cell small-11 medium-8">
             <div class="cell small-9 medium-7 description">
               <p>Wir machen alles von A-Z: Planung, Beratung,
                 Ausführung sämtlicher sanitärer Anlagen wie
@@ -236,8 +240,8 @@ layout: default
                 Entkalkungsanlagen, Bauspenglerei, Blitzschutzanlagen
               </p>
             </div>
-            <hr class="cell small-10 medium-8">
-            <div class="cell small-10 medium-8 associate">
+            <hr class="cell small-11 medium-8">
+            <div class="cell small-11 medium-8 associate">
               <img src="img/sanitas_trösch.png" alt="sanitas_trösch">
               <img src="img/richner_ag.gif" alt="richner_ag">
               <img src="img/laufen.svg" alt="laufen">
@@ -257,6 +261,9 @@ layout: default
             </div>
             <div class="cell small-10 medium-8 map_div">
               <div id="map"></div>
+            </div>
+            <div class="cell small-10 medium-8 impressum">
+              <a href="#">Impressum</a><span> | T.Eigenmann GmbH | 2018</span>
             </div>
           </div>
         </div>

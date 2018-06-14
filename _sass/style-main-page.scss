@@ -10,22 +10,7 @@
   background: linear-gradient(141deg, #e9e9e9 0%, #e1e1e1 50%, #e1e1e1 50%, #eee 100%);
   border-bottom: 5px solid #9aa2af;
   z-index: 999;
-  // box-shadow: 0 8px 6px -6px #ccc;
-  // @media(min-width: 640px){
-  //   height: 5.5rem;
-  //   height: 20rem;
-  // }
-  // @media(min-width: 1224px){
-  //   height: 8.3rem;
-  //   height: 20rem;
-  // }
-  // @include resp-md{
-  //   background: linear-gradient(141deg, #e5e5e5 50%, #eee 50%);
-  // }
-  // @include resp-86{
-  //   background: linear-gradient(141deg, #ddd 0%, #e5e5e5 50%, #e5e5e5 50%, #eee 100%);
-  //   // background: linear-gradient(141deg,#e5e5e5 50%, #eee 70%);
-  // }
+
   .header_grid-x{
     height: 100%;
     padding-top: 1.2rem;
@@ -67,6 +52,7 @@
     text-align: center;
     font-family: 'Share', cursive;
     align-self: flex-end;
+    box-shadow: -4px 4px 0px 0px #bbb;
     @include resp-md{
       font-size: 2.15rem;
     }
@@ -318,6 +304,7 @@ a.anchor {
       border: 1px #999 solid;
       border-left: 5px #3f6d96 solid;
       background-color: #f9f9f9;
+      box-shadow: 2px 2px 0px 0px #ddd;
       margin-top: auto;
       margin: 1rem 0;
       ul{
@@ -338,6 +325,7 @@ a.anchor {
     .map_div{
       position: relative;
       padding-top: 58%;
+      box-shadow: 2px 2px 0px 0px #ddd;
       @include resp-md{
         padding-top: 35%;
       }
@@ -419,6 +407,12 @@ a.anchor {
   @media(min-width: 640px) and (max-width: 1324px) and (min-height: 600px){
     justify-content: flex-start;
   }
+  @media (max-height: 840px) and (min-width: 86em){
+      height: 42rem;
+    }
+  @media (max-height: 840px) and (min-width: 95em){
+      height: 50rem;
+    }
 
   .grid-x{
     margin: -0.9375rem;
@@ -471,11 +465,11 @@ a.anchor {
       border-top: 3px #e9e9e9 solid;
       border-bottom: 3px #e9e9e9 solid;
       display: flex;
-      margin: 0.8rem;
+      margin: 0.5rem;
       width: 100%;
       transition: all 0.45s ease;
       @include resp-86{
-        margin: 1.5rem;
+        margin: 0.8rem;
       }
     }
   }
@@ -522,7 +516,7 @@ a.anchor {
   }
   .figure-width:hover figcaption .textbox{
     transition-delay: 0.28s;
-    margin: 0.8rem;
+    // margin: 0.8rem;
   }
 
   .js-hover-figcaption{
@@ -560,11 +554,23 @@ a.anchor {
     }
   }
 
-  .willkommen-title{
+  .willkommen-title1{
     font-family: 'Share', cursive;
+    line-height: 0;
+    flex-basis: 100%;
+    text-align: center;
+    color: #e9e9e9;
+    @include resp-86{
+      font-size: 1rem;
+    }
+  }
+  .willkommen-title2{
+    font-family: 'Share', cursive;
+    flex-basis: 100%;
+    text-align: center;
     color: #fff;
     @include resp-86{
-      font-size: 1.5rem;
+      font-size: 2.2rem;
     }
   }
 }

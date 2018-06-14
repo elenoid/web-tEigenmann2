@@ -47,6 +47,10 @@ $('.figure-width').on('mouseenter', function() {
   $('.js-figcaption').removeClass( "js-hover-figcaption" );
 });
 
+$('.navbar-center li').on('click', function() {
+  $('#navbar').removeClass( "js-hover-navbar" );  
+});
+
 // Specific figure is opend
 $('#link-neubau').on('click', function() {
   $('.js-figcaption').removeClass( "js-hover-figcaption" );
@@ -124,5 +128,4 @@ $('a[href*="#"]')
         });
       }
     }
-    $('#navbar').removeClass( "js-hover-navbar" );  
   });

@@ -1,0 +1,66 @@
+//moddified style-main version
+.navbar.navbar-back{
+  @include resp-md{
+    justify-content: flex-end;
+    li{
+      padding: 0 1.8rem;
+    }
+  }
+}
+//moddified style-main version
+.sections-content_grid-y.style-impressum{
+  justify-content: space-between;
+  @media(min-width: 640px){
+    height: auto;
+  }
+  @media(min-width: 640px) and (max-width: 1324px) and (min-height: 600px){
+    justify-content: flex-start;
+  }
+  @media (max-height: 840px) and (min-width: 86em){
+      height: auto;
+    }
+  @media (max-height: 840px) and (min-width: 95em){
+      height: auto;
+    }
+
+  .grid-x{
+    margin: -0.9375rem;
+    @media print, screen and (min-width: 64em){
+      // defines height for content (33%)
+      height: auto;
+    }
+  }
+}
+.textbox-title{
+  background-color: #7f9db9;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.5rem;
+  h3{
+    font-family: 'Share', cursive;
+    color: #fefefe;
+    line-height: 1;
+  }
+
+}
+
+.textbox-impressum{
+  background-color: #f8f8f8;
+  border: 1px #ccc solid;
+  border-top: 0px;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 4.5rem;
+  padding-right: 2.5rem;
+
+  h4{
+    color: #333;
+  }
+  p{
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: #666;
+    font-size: 15px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}

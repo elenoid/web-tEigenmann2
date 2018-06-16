@@ -35,16 +35,39 @@
 //moddified style-main version
 .sections-content_grid-y.style-galerie{
   .figure-height{
-    height: calc(45% - 1.875rem);
+    height: calc(55% - 1.875rem);
+    background-color: #7f9db9;;
+    @include resp-86{
+      width: calc(41.66667% - 1.875rem);
+    }
+  }
+
+  .figure-width{
+    border: 1px #ddd solid;
   }
 
   .figure-width:hover figcaption{
     transform: translateY(0);
   }
 
+  .textbox-title{
+    @include resp-86{
+      width: calc(83.33333% - 1.875rem);
+    }
+  }
+
   figcaption{
     bottom: 0;
     height: 100%;
+  }
+
+  img{
+    height: 89%;
+    opacity: 1;
+  }
+
+  h5{
+    // color: #555;
   }
 
   .figure-overlay{

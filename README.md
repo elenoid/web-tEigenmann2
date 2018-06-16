@@ -15,6 +15,7 @@ Zu machen:
   -Fehler auf anderen Browsern verbessern
   -Texte für die Hauptseite schreiben
   -Namecheap Namen kaufen -> Thomas -> e-mann.ch
+  -Kontaktformular mit Thomas Email verknüpfen
 
 Erledigt:
   Service Bild ersetzen, Umbau -> Gebrit installations systeme

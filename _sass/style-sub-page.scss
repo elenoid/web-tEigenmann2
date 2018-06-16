@@ -8,7 +8,7 @@
   }
 }
 //moddified style-main version
-.sections-content_grid-y.style-impressum{
+.sections-content_grid-y.style-sub-page{
   justify-content: space-between;
   @media(min-width: 640px){
     height: auto;
@@ -31,8 +31,40 @@
     }
   }
 }
+
+//moddified style-main version
+.sections-content_grid-y.style-galerie{
+  .figure-height{
+    height: calc(45% - 1.875rem);
+  }
+
+  .figure-width:hover figcaption{
+    transform: translateY(0);
+  }
+
+  figcaption{
+    bottom: 0;
+    height: 100%;
+  }
+
+  .figure-overlay{
+    background: none;
+  }
+
+  .grid-x{
+    margin: -0.9375rem;
+    @media print, screen and (min-width: 64em){
+      // defines height for content (33%)
+      height: auto;
+    }
+    @include resp-86{
+      height: 100%;
+    }
+  }
+}
 .textbox-title{
   background-color: #7f9db9;
+  height: 3.5rem;
   padding-top: 0.8rem;
   padding-bottom: 0.5rem;
   padding-left: 2.5rem;
@@ -44,7 +76,7 @@
 
 }
 
-.textbox-impressum{
+.textbox-content{
   background-color: #f8f8f8;
   border: 1px #ccc solid;
   border-top: 0px;
@@ -63,4 +95,27 @@
     padding-left: 1rem;
     padding-bottom: 1rem;
   }
+
+  // contact-form
+  textarea{
+    height: 15rem;
+  }
+
+  input{
+    width: 100%;
+  }
+
+  label{
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 15px;
+  }
+
+  .cell{
+    margin-top: 0.5rem;
+    padding: 0 0.3rem;
+  }
+}
+//moddified contact textbox
+.textbox-content.textbox-contact{
+  padding: 4.5rem;
 }

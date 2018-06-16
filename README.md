@@ -1,7 +1,7 @@
-# hobby_liste
+
 ### Projektdaten:  
   Ersteller: Pascal Zwicker  
-  Besitzer: Pascal Zwicker  
+  Besitzer: Thomas Eigenmann
   Host Framework: jekyll  
   Css Framework: Foundation  
   Hosting: gh-pages  
@@ -10,19 +10,18 @@
 ### Kurze Beschreibung:  
 
 Zu machen:
--Kontaktformular, Galerie
--Navbar ->Sanitär und Spengler
--Karte
-  Bericht Tagblatt
-
-Service Bild ersetzen, Umbau -> Gebrit installations systeme
-  -> KWC Servicekoffer
-
--Bild Webseite für Thomas in PDF
-
--Namecheap Namen kaufen -> Thomas -> e-mann.ch
+  -Bericht Tagblatt
+  -Ladezeiten -> Bilder verbessern
+  -Fehler auf anderen Browsern verbessern
+  -Texte für die Hauptseite schreiben
+  -Namecheap Namen kaufen -> Thomas -> e-mann.ch
 
 Erledigt:
+  Service Bild ersetzen, Umbau -> Gebrit installations systeme
+  -> KWC Servicekoffer
+  -Karte
+  -Navbar ->Sanitär und Spengler
+  -Kontaktformular, Galerie
   -Partner:
   Sanitär Trösch AG
   Richner AG

@@ -1,4 +1,4 @@
-oGEM
+GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.5.2)
@@ -89,4 +89,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.16.2

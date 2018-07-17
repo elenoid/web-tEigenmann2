@@ -98,7 +98,7 @@
   }
 
   img{
-    height: 3.5rem;
+    height: 3.3rem;
     align-self: flex-end;
     object-fit: contain;
     @include resp-md{
@@ -117,13 +117,14 @@
   align-items: flex-end;
   i{
     margin-left: 0.8rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #fefefe;
     background-color: #6f7d88;
     padding: 0.45rem 0.55rem;
     border-radius: 4px;
   }
   @include resp-md{
+    font-size: 1.6rem;
     display: none;
   }
 }

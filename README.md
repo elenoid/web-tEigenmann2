@@ -12,20 +12,27 @@
 
 Zu machen:
   -Ladezeiten -> Bilder verbessern
-  -Fehler in Handy und Tablet Modus
   -Fehler auf anderen Browsern verbessern
-  -Auf neue Browser hinweisen
-  -Kontaktformular Bilder upload
-  -Kontaktformular mit Thomas Email verknüpfen -> Thomas zeigen
-  - Auf alte Browser hinweisen
-  -Texte für die Hauptseite schreiben
-  -Alte Webseite auflösen
-  -Google Front-Page Webseite ändern
-  -Local.ch Webseite ändern -> Passwort per E-Mail schicken
-  -Hosttech Namen und ev. ssl kaufen-> e-mann.ch
+  -Auf alte Browser hinweisen
+  -Roland Webseite texte zeigen
+  -Domain verknüpfen
   THOMAS
+  -Local.ch Webseite ändern -> Passwort per E-Mail schicken
+  -Kontaktformular mit Thomas Email verknüpfen -> Thomas zeigen
+  -Google Front-Page Webseite ändern
+  -Alte Webseite auflösen
+
+Probeme:
+  -Flavicon wird nicht angezeigt
+
+
+Prozess:
+  -Fehler in Handy und Tablet Modus
+
 
 Erledigt:
+  -Kontaktformular Bilder upload
+  -Texte für die Hauptseite schreiben
   -Bericht Tagblatt
   Service Bild ersetzen, Umbau -> Gebrit installations systeme
   -> KWC Servicekoffer

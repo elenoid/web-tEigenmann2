@@ -37,7 +37,7 @@
   .figure-height{
     height: calc(55% - 1.875rem);
     background-color: #7f9db9;;
-    @include resp-86{
+    @include resp-96{
       width: calc(41.66667% - 1.875rem);
     }
   }
@@ -51,7 +51,7 @@
   }
 
   .textbox-title{
-    @include resp-86{
+    @include resp-96{
       width: calc(83.33333% - 1.875rem);
     }
   }
@@ -80,7 +80,7 @@
       // defines height for content (33%)
       height: auto;
     }
-    @include resp-86{
+    @include resp-96{
       height: 100%;
     }
   }

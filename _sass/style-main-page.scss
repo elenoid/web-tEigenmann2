@@ -117,7 +117,7 @@
   align-items: flex-end;
   i{
     margin-left: 0.8rem;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: #fefefe;
     background-color: #6f7d88;
     padding: 0.45rem 0.55rem;
@@ -173,11 +173,14 @@
   i{
     margin-top: 2.5rem;
     margin-left: 0.8rem;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     color: #fefefe;
     background-color: #6f7d88;
     padding: 0.4rem 0.55rem;
     border-radius: 4px;
+    @include resp-md{
+      font-size: 1.6rem;
+    }
   }
 
   ul{
@@ -359,10 +362,9 @@ a.anchor {
       @include resp-md{
         padding-top: 35%;
       }
-      // @include resp-lg{
-      //   padding-top: 58%;
-      //   width: 100%;
-      // }
+      @include resp-lg{
+        padding-top: 11%;
+      }
       @include resp-96{
         padding-top: 58%;
         width: 100%;
@@ -437,13 +439,9 @@ a.anchor {
   @media(min-width: 640px) and (max-width: 1324px) and (min-height: 600px){
     justify-content: flex-start;
   }
-  @media (max-height: 840px) and (min-width: 86em){
-      height: 42rem;
-    }
-  @media (max-height: 840px) and (min-width: 95em){
-      height: 50rem;
-    }
-
+  @media (max-height: 840px) and (min-width: 96em){
+    height: 42rem;
+  }
   .grid-x{
     margin: -0.9375rem;
     @media print, screen and (min-width: 64em){
@@ -539,8 +537,11 @@ a.anchor {
     // margin: 0.5rem;
     position: relative;
     overflow: hidden;
-    padding-top: 70%;
+    padding-top: 66%;
     width: 100%;
+    @include resp-lg{
+      padding-top: 70%;
+    }
     @include resp-96{
       height: 100%;
       padding: 0;

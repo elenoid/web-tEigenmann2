@@ -7,11 +7,11 @@
   Hosting: gh-pages  
   CMS: keines  
   Links: elenoid.github.io/web-tEigenmann2/
+         192.168.15.149:4000
 
 ### Kurze Beschreibung:  
 
 Zu machen:
-  -Ladezeiten -> Bilder verbessern
   -Fehler auf anderen Browsern verbessern
   -Auf alte Browser hinweisen
   -Roland Webseite texte zeigen
@@ -27,10 +27,11 @@ Probeme:
 
 
 Prozess:
-  -Fehler in Handy und Tablet Modus
+  -Ladezeiten -> Bilder verbessern
 
 
 Erledigt:
+  -Fehler in Handy und Tablet Modus
   -Kontaktformular Bilder upload
   -Texte für die Hauptseite schreiben
   -Bericht Tagblatt
